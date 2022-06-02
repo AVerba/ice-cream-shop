@@ -1,0 +1,102 @@
+/*=============== Миксин для шрифта ===================*/
+// Mixins for FONT
+// fz -- font-size
+// lh -- line-height
+// ls -- letter-spacing
+
+@mixin font($fz, $lh, $ls) {
+  font-size: $fz;
+  line-height: $lh / $fz;
+  letter-spacing: $ls;
+}
+/*=============== Редактирование текста===================*/
+@mixin font-modify($color, $fontSize, $fontWeight, $letterSpacing, $lineHeight) {
+  color: $color;
+  font-size: #{$fontSize}px;
+  font-weight: $fontWeight;
+  letter-spacing: $letterSpacing;
+  line-height: calc(#{$lineHeight} / #{$fontSize});
+}
+
+/*=============== Расстановка карточек товара по flex ===================*/
+// Mixins for  CARDS
+// nc -- number-cards
+// gap --  interval between cards
+
+@mixin flex-card($nc, $gap) {
+  flex-basis: calc(100% / #{$nc} - #{$gap});
+  margin-left: $gap;
+  margin-top: $gap;
+}
+/*=============== Добавление размеров ===================*/
+@mixin add-size($width, $height) {
+  width: $width;
+  height: $height;
+}
+/*=============== Редактирование background===================*/
+@mixin background-pos($repeat: no-repeat, $position: center, $size: cover) {
+  background-repeat: $repeat;
+  background-position: $position;
+  background-size: $size;
+}
+/*=============== Редактирование псевдо ===================*/
+@mixin pseudo($display: block, $pos: absolute, $content: '') {
+  content: $content;
+  display: $display;
+  position: $pos;
+}
+/*=============== Центрирование ===================*/
+@mixin сentering-xy($position: absolute, $left: 50%, $top: 50%) {
+  position: $position;
+  left: $left;
+  top: $top;
+  transform: translate(-$left, -$top);
+}
+@mixin сentering-x() {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@mixin сentering-y() {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/*=============== Миксин для медиазапросов ===================*/
+@mixin for-size($range) {
+  @if $range==to-mobile {
+    @media screen and (max-width: #{$to-mobile}) {
+      @content;
+    }
+  } @else if $range==mobile {
+    @media screen and (min-width: $mobile) {
+      @content;
+    }
+  } @else if $range==tablet {
+    @media screen and (min-width: $tablet) {
+      @content;
+    }
+  } @else if $range==desktop {
+    @media screen and (min-width: $desktop) {
+      @content;
+    }
+  } @else if $range==to-tablet {
+    @media screen and (max-width: $to-tablet) {
+      @content;
+    }
+  } @else if $range==to-desktop {
+    @media screen and (max-width: $to-desktop) {
+      @content;
+    }
+  }
+}
+
+// Add background scss
+
+@mixin bg-im($path, $bgsz){
+  background-image: 
+		$path;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: $bgsz;
+}

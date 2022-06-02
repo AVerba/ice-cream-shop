@@ -1,0 +1,178 @@
+<header class="header header-js" >
+  <div class="container header-wrapper">
+    <a href="#home" class="header__logo logo" data-link>
+      <picture> 
+        <source srcset="
+         ./images/desktop/header/logo.webp 1x, 
+         ./images/desktop/header/logo@2x.webp 2x" 
+        type="image/webp"
+         media="(min-width:1280px )">
+       <source srcset="
+         ./images/tablet/header/logo.webp 1x, 
+         ./images/tablet/header/logo@2x.webp 2x" 
+        type="image/webp"
+         media="(max-width: 1279px)">
+            <source srcset="
+        ./images/mobile/header/logo.webp 1x,
+         ./images/mobile/header/logo@2x.webp 2x" 
+        type="image/webp"
+         media="(max-width: 767px)">
+        <source srcset="
+                        ./images/desktop/header/logo.png 1x, 
+                        ./images/desktop/header/logo@2x.png 2x"
+                media="(min-width: 1280px)">
+        <source srcset="
+                        ./images/tablet/header/logo.png 1x, 
+                        ./images/tablet/header/logo@2x.png 2x"
+                media="(max-width: 1279px)">  
+        <source srcset="
+                        ./images/mobile/header/logo.png 1x,
+                        ./images/mobile/header/logo@2x.png 2x"
+                media="(max-width: 767px)">                                         
+        <img class="logo-img" src="./images/mobile/header/logo.png" alt="logo" width="199">   
+    </picture>
+    </a>
+    <nav class="header__menu menu">
+      <ul class="menu__list">
+          <li><a href="#home" class="menu__link" data-link>Home</a></li>
+          <li><a href="#about-us" class="menu__link" data-link>About us</a></li>
+          <li><a href="#howitsmade" class="menu__link" data-link>How it’s made?</a></li>
+          <li><a href="#products" class="menu__link" data-link>Our products</a></li>
+          <li><a href="#contact" class="menu__link" data-link>Contact</a></li>
+      </ul>             
+    </nav>
+    <button type="button" class="header__mobile-menu js-open-menu" aria-expanded="false" aria-controls="mobile-menu" >
+      <svg class="icon" width="20" height="12">
+          <use xlink:href="./images/icons/sprite.svg#open-menu"></use>
+      </svg>
+    </button> 
+    <button class="buy__btn" type="button" data-modal-open>Buy now</button>
+  </div>
+</header>
+
+<section id="home" class="hero hero-js">
+  <div class="hero__container container">
+    <h1 class="hero__title"> ice cream made with <span>passion</span></h1>
+    <ul class="hero__btn">
+      <li><a class="hero__btn--dark" data-link href="#products">Products</a></li>
+      <li><a class="hero__btn--light" data-link href="#howitsmade">How it’s made?</a></li>
+    </ul>
+    <div class="bio-eco">
+      .<div class="bio-eco__inner bio-eco__img animate__animated animate__zoomInDown">
+        <picture>
+          <source  srcset="./images/desktop/hero/milk.webp 1x, 
+                        ./images/desktop/hero/milk@2x.webp 2x"
+           type="image/webp"
+            media="(min-width:1200px )">
+            <source  srcset="
+             ./images/tablet/hero/milk.webp 1x, 
+                        ./images/tablet/hero/milk@2x.webp 2x
+            "
+             type="image/webp"
+            media="(min-width: 768px)">
+          <source
+                  srcset="
+                        ./images/desktop/hero/milk.png 1x, 
+                        ./images/desktop/hero/milk@2x.png 2x"
+                  media="(min-width: 1200px)"/>
+          <source
+                  srcset="
+                        ./images/tablet/hero/milk.png 1x, 
+                        ./images/tablet/hero/milk@2x.png 2x"
+                  media="(min-width: 768px)"/>
+          <img src="./images/desktop/hero/milk.png" alt="bio-eco" width="200"/>
+        </picture>
+      </div>
+      
+
+      <div class="bio-eco__content">
+        <p class="bio-eco__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et
+        </p>
+        <a class="bio-eco__link" href="">
+          <svg class="bio-eco__arrow">
+            <use href="./images/icons/sprite.svg#icon-products-link"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="inner__img icecream-image">
+      <picture>
+        <source
+              srcset="
+                    ./images/desktop/hero/header-icecream.webp    1x,
+                    ./images/desktop/hero/header-icecream@2x.webp 2x"
+                    type="image/webp"
+              media="(min-width: 1280px)"/>
+         <source
+              srcset="
+                    ./images/tablet/hero/header-icecream.webp    1x,
+                    ./images/tablet/hero/header-icecream@2x.webp 2x"
+                     type="image/webp"
+              media="(min-width: 768px)"/>
+               <source
+              srcset="
+                    ./images/mobile/hero/header-icecream.webp    1x,
+                    ./images/mobile/hero/header-icecream@2x.webp 2x"
+                    type="image/webp"
+              media="(max-width: 767px)"/>
+      <source
+              srcset="
+                    ./images/desktop/hero/header-icecream.png    1x,
+                    ./images/desktop/hero/header-icecream@2x.png 2x"
+              media="(min-width: 1280px)"/>
+      <source
+              srcset="
+                    ./images/tablet/hero/header-icecream.png    1x,
+                    ./images/tablet/hero/header-icecream@2x.png 2x"
+              media="(min-width: 768px)"/>
+      <source
+              srcset="
+                    ./images/mobile/hero/header-icecream.png    1x,
+                    ./images/mobile/hero/header-icecream@2x.png 2x"
+              media="(max-width: 767px)"/>
+      <img src="./images/desktop/hero/header-icecream.png" alt="Icecream" width="171"/>
+    </picture>
+    </div>
+    <ul class="equipment-list">
+      <li class="equipment-list__item">
+        <span class="equipment-list__number">16</span>
+        <p class="equipment-list__text">cafes</p>
+      </li>
+      <li class="equipment-list__item">
+        <span class="equipment-list__number">23</span>
+        <p class="equipment-list__text">food trucks</p>
+      </li>
+    </ul>
+    <div class="equipment-list__inner tasty__girl animate__animated animate__slideInUp">
+      <picture>
+        <source
+              srcset="
+                      ./images/desktop/hero/girl.webp    1x,
+                      ./images/desktop/hero/girl@2x.webp 2x"
+                   type="image/webp"     
+              media="(min-width: 1280px)"/>
+          <source
+              srcset="
+                      ./images/tablet/hero/girl.webp    1x,
+                      ./images/tablet/hero/girl@2x.webp 2x"
+                      type="image/webp" 
+              media="(min-width: 768px)"/>
+      <source
+              srcset="
+                      ./images/desktop/hero/girl.png    1x,
+                      ./images/desktop/hero/girl@2x.png 2x"
+              media="(min-width: 1280px)"/>
+      <source
+              srcset="
+                      ./images/tablet/hero/girl.png    1x,
+                      ./images/tablet/hero/girl@2x.png 2x"
+              media="(min-width: 768px)"/>
+      <img src="./images/desktop/hero/girl.png" alt="girl" width="293" />
+    </picture>
+    </div>
+    
+    </div>  
+  </div>  
+</section>

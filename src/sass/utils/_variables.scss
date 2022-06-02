@@ -1,0 +1,53 @@
+$to-mobile: 320px;
+$mobile: 480px;
+$to-tablet: 767px;
+$tablet: 768px;
+$to-desktop: 1279px;
+$desktop: 1280px;
+
+:root {
+  --accent-color: #d41443;
+
+  // BACKGROUND COLOR
+
+  --primary-bg-color: #fff5f6;
+  --secondary-bg-color: #ffffff;
+  --hero-bg-color: #ffb8ca;
+  --mob-menu-bg-color: #e17992;
+  --mob-menu-border: #e18298;
+
+  // TEXT COLOR
+
+  --primary-text-color: #000000;
+  --secondary-text-color: #ffa5ba;
+  --third-text-color: #907e82;
+  --lite-text-color: #ffffff;
+
+  --underline-color: #e1e1e1;
+
+  // BUTTON BACKGROUND
+  --primary-btn-bg: #ffffff;
+
+  --hover-btn-bg: #c7133e;
+  --hover-btn-bg-lite: #ecebeb;
+
+  // PRODUCT-SECTION
+
+  --primary-card-bg: #ffb8ca;
+  --secondary-card-bg: #f0d1a5;
+  --third-card-bg: #c2e297;
+
+  --address-btn-bg: #d41342;
+
+  --social-icon-bg: #fea5bb;
+
+  // SLIDER COLOR
+
+  --pagination-bg: #d9d9d9;
+  --active-pagination-color: #d31342;
+  --slider-bg-color: #fafafa;
+
+  // ANIMATION
+  --animation-cube: cubic-bezier(0.4, 0, 0.2, 1);
+  --animation-timer: 250ms;
+}

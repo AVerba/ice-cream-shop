@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/goitacademy/ice-cream-shop.git"
+    "url": "git+https://github.com/AVerba.github.io/ice-cream-shop.git"
   },
   "keywords": [],
   "author": "Oleksii Verbytskyi",
@@ -24,5 +24,8 @@
     "parcel-plugin-nuke-dist": "^1.0.1",
     "posthtml-include": "^1.6.2",
     "sass": "^1.32.8"
+  },
+  "dependencies": {
+    "modal.js": "^1.1.7"
   }
 }

@@ -1,0 +1,106 @@
+.advantages {
+  padding: 39px 0 59px;
+  @media screen and (min-width: 768px) {
+    padding: 66px 0 140px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding: 39px 0 59px;
+  }
+
+  &__list {
+    width: 100%;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      $gap: 60px;
+      margin-left: calc(-1 * #{$gap});
+      margin-top: calc(-1 * #{$gap});
+    }
+
+    @media screen and (min-width: 1280px) {
+      $gap: 30px;
+      margin-left: calc(-1 * #{$gap});
+      margin-top: calc(-1 * #{$gap});
+    }
+  }
+
+  &__item {
+    position: relative;
+    width: 100%;
+    justify-content: flex-end;
+    &:before {
+      content: url('../images/icons/icon1.png');
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      top: 0;
+      left: 0;
+    }
+    &:nth-child(2) {
+      &::before {
+        content: url('../images/icons/icon2.png');
+      }
+    }
+    &:nth-child(3) {
+      &::before {
+        content: url('../images/icons/icon3.png');
+      }
+    }
+    @media screen and (max-width: 479px) {
+      width: 230px;
+      height: 156px;
+    }
+    @media screen and(max-width:769px) {
+      margin-bottom: 38px;
+    }
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      @include flex-card(3, 60px);
+    }
+    @media screen and (min-width: 1280px) {
+      @include flex-card(3, 30px);
+    }
+  }
+
+  &__description {
+    padding-top: 66px;
+    @media screen and(min-width:768px) {
+      padding-top: 86px;
+    }
+    @media screen and(min-width:1280px) {
+      padding-top: 90px;
+    }
+  }
+
+  &__text {
+    @include font-modify(var(--primary-text-color), 12, 700, 0.02em, 20);
+    margin-top: 13px;
+    @media screen and (min-width: 768px) {
+      margin-top: 15px;
+      font-size: 14px;
+      line-height: (24 / 14);
+    }
+    @media screen and (min-width: 1280px) {
+      margin-top: 15px;
+      font-size: 16px;
+      line-height: (28 / 16);
+    }
+  }
+
+  &__number {
+    font-family: 'Titan One', cursive;
+    text-align: center;
+    @include font-modify(var(--accent-color), 36, 400, 0.04em, 41);
+    @media screen and (min-width: 768px) {
+      font-size: 48px;
+      line-height: (55 / 48);
+    }
+
+    @media screen and (min-width: 1280px) {
+      font-size: 58px;
+      line-height: (66 / 58);
+    }
+  }
+}

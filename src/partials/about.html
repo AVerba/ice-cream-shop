@@ -1,0 +1,75 @@
+<section class="about section">
+  <div class="container">
+    <p id="howitsmade" class="about__label">tradition and love</p>
+    <h2 class="about__title">how it’s made?</h2>
+    <div class="about__wrapper">
+      <picture>
+        <source
+          srcset="
+            ./images/desktop/about/about-img-desktop.webp    1x,
+            ./images/desktop/about/about-img-desktop@2x.webp 2x
+          "
+          type="image/webp"
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="
+            ./images/tablet/about/about-img-tablet.webp    1x,
+            ./images/tablet/about/about-img-tablet@2x.webp 2x
+          "
+          type="image/webp"
+          media="(max-width: 1279px)"
+        />
+        <source
+          srcset="
+            ./images/mobile/about/about-img-mob.webp    1x,
+            ./images/mobile/about/about-img-mob@2x.webp 2x
+          "
+          type="image/webp"
+          media="(max-width: 767px )"
+        />
+
+        <source
+          srcset="
+            ./images/desktop/about/about-img-desktop.png    1x,
+            ./images/desktop/about/about-img-desktop@2x.png 2x
+          "
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="
+            ./images/tablet/about/about-img-tablet.png    1x,
+            ./images/tablet/about/about-img-tablet@2x.png 2x
+          "
+          media="(max-width: 1279px)"
+        />
+        <source
+          srcset="
+            ./images/mobile/about/about-img-mob.png    1x,
+            ./images/mobile/about/about-img-mob@2x.png 2x
+          "
+          media="(max-width: 767px)"
+        />
+        <img
+          class="about__image"
+          src="./images/mobile/about/about-img-mob.png"
+          alt="Milk carafe on the background of a cow"
+          loading="lazy"
+        />
+      </picture>
+      <div class="about__content">
+        <p class="about__desc">
+          Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
+          lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
+        </p>
+        <p class="about__text">
+          Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci
+          in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna
+          maximus. Cras massa nibh, tincidunt.
+        </p>
+        <p class="about__bottom-text">Aliquam erat volutpat. Aenean accumsan.</p>
+        <button class="about__btn" type="button">Read more</button>
+      </div>
+    </div>
+  </div>
+</section>
